@@ -78,3 +78,32 @@ a {
   pointer-events: none;
   z-index: -1;
 }
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-enter {
+  animation: heroFadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-fade {
+  animation: heroFadeIn 1.2s ease-out forwards;
+}
