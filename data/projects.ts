@@ -25,7 +25,7 @@ export const projects: Project[] = [
     description:
       "Experiência digital desenvolvida para uma concessionária de veículos.",
     image: "/projects/verion.jpg",
-    url: "http://verion-motors.vercel.app",
+    url: "https://verion-motors.vercel.app",
   },
 
   {
