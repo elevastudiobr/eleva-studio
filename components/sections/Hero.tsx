@@ -72,6 +72,7 @@ export default function Hero() {
 
         {/* Mockup */}
         <div className="relative z-10 w-[820px] xl:w-[910px]">
+
           <Image
             src="/images/mockups/hero-mockup.png"
             alt="Projeto desenvolvido pela Eleva Studio"
@@ -80,6 +81,10 @@ export default function Hero() {
             priority
             className="h-auto w-full object-contain drop-shadow-[0_45px_100px_rgba(0,0,0,0.65)]"
           />
+
+          {/* Gradiente somente no desktop */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-[55%] bg-gradient-to-r from-[#050817] via-[#050817]/70 to-transparent" />
+
         </div>
 
       </div>
@@ -143,7 +148,7 @@ export default function Hero() {
               max-w-lg
               text-sm
               leading-[1.75]
-              text-[#a5a7b5]
+              text-[#d1d3dc]
               opacity-0
               [animation-delay:350ms]
               md:mt-12
